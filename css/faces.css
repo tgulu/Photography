@@ -136,10 +136,18 @@
   
   }
   
-  @media (min-width: 576px) {
+  @media (max-width: 576px) {
     .title h2 {
       font-size: 4rem;
     }
+
+    #navbar ul {
+      list-style-type: none;
+      display: flex;
+      gap: 50px;
+      margin-left: 50px;
+    }
+  
   
     .portfolio-grid {
       grid-template-columns: repeat(2, 1fr);
