@@ -225,7 +225,6 @@ h1 {
 
 /* End of Home Section */
 
-
 /* Video Section */
 
 .video-container {
@@ -264,8 +263,6 @@ h1 {
   height: 100vh;
   width: 70%;
 }
-
-
 
 .video-section {
   position: relative;
@@ -306,13 +303,13 @@ h1 {
 
 .social-links li a i {
   font-size: 40px;
-  color: white; 
+  color: white;
 }
 
 .social-links li a {
   width: 80px;
   height: 80px;
-  background-color: transparent; 
+  background-color: transparent;
   border-radius: 0.3rem;
   transition: var(--transition);
   text-align: center;
@@ -329,7 +326,6 @@ h1 {
 }
 
 @media (max-width: 600px) {
-
   #navbar ul {
     list-style-type: none;
     display: inline-block;
@@ -345,18 +341,17 @@ h1 {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
       url("/images/faces/Taboo.jpg") center/cover no-repeat fixed;
     height: 10vh;
-    display: flex; 
-    flex-direction: column; 
-    justify-content: flex-end; 
-    align-items: center; 
-
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
   }
 
   #art_title {
     font-size: 40px;
     font-weight: 200;
     text-align: center;
-    bottom: 500px; 
+    bottom: 500px;
   }
 
   .background-img {
@@ -366,7 +361,7 @@ h1 {
     justify-content: center;
     z-index: 1;
     width: 125%;
-    height: 40vh; 
+    height: 40vh;
   }
 
   .photo-section {
@@ -391,14 +386,12 @@ h1 {
     display: none;
   }
 
-
   .photo-image h1 {
     font-size: 35px;
     line-height: 0.1;
     margin-top: 110px;
-    color: white; 
-    padding: 10px 20px; 
-
+    color: white;
+    padding: 10px 20px;
   }
 
   .photo-container .photo-item-inner .overlay {
@@ -417,9 +410,9 @@ h1 {
     align-items: center;
     justify-content: center;
   }
-  
+
   .video-container .video-background .video {
-    width: 350px;
+    width: 250px;
   }
 
   .social-links li a {
