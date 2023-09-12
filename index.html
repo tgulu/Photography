@@ -27,14 +27,43 @@
 
 
 <body>
+    <header id="header" class="vh-100 flex">
+        <div class="header-container " id="header-container">
+            <nav class="navbar">
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <div class="navbar-links">
+                    <ul>
+                        <li><a href="#photography-section">Photography</a></li>
+                        <li><a href="#header-container">Home</a></li>
+                        <li><a href="#video-section">Videography</a></li>
+                    </ul>
+                </div>
+            </nav>
 
 
-    <!-- Header -->
+
+            <div class="main-title">
+                <h1 id="art_title">aN aRT PieCe <br><span class="typewrite" data-loop="yes" data-speed="200"
+                        data-delay="2000"
+                        data-words='["BY G|u|L|u","by G|U|L|.._", "BY G|U|L|.._", "BY G|U|._..|.._"]'></span></h1>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+    <!-- 
     <header id="header" class="vh-100 flex">
         <div class="container">
             <div class="header-container " id="header-container">
 
-                <!-- Navbar -->
+
                 <div class="nav-container">
                     <div class="row ">
                         <nav id="navbar">
@@ -59,9 +88,9 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header> -->
 
-    <!-- end of Heder -->
+
 
     <!-- Main Content -->
     <main>
@@ -71,7 +100,7 @@
             <section id="photography-section" class="photography-section">
                 <div class="photo-container">
                     <div class="background">
-                        <div class="background-img">
+                        <div class="photo-background-img">
                             <img src="/images/faces/Kyle.JPG" alt="portrait" />
                         </div>
 
@@ -79,7 +108,7 @@
                         <div class="photo-section">
 
                             <!-- Places Links -->
-                            <div class="photo-image">
+                            <div class="photo-link-image">
                                 <div class="photo-item-inner" id="placesPhotography">
                                     <a href="/html/places.html">
                                         <img src="./images/places/__4_1304.jpg" alt="film">
@@ -91,7 +120,7 @@
                             </div>
 
                             <!-- Faces Links -->
-                            <div class="photo-image">
+                            <div class="photo-link-image">
                                 <div class="photo-item-inner" id="facesPhotography">
                                     <img src="/images/faces/Dan .JPG" alt="digital">
                                     <div class="overlay">
@@ -124,7 +153,7 @@
                             <li>
                                 <a href="https://www.youtube.com/channel/UCEkZmClDzScoT-26zT0w-Zg" target="_blank"
                                     rel="noopener noreferrer" class="flex">
-                                    <i class="fab fa-youtube"></i>
+                                    <i  class="fab fa-youtube"></i>
                                 </a>
                             </li>
                         </ul>
