@@ -61,7 +61,6 @@ nav ul li a {
 }
 
 nav {
-  /* color: rgba(255, 0, 0, 0.5); */
   background-color: rgba(0, 0, 0, 0.1);
   height: 80px;
   width: 100%;
@@ -69,7 +68,6 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  /* padding: 20px; */
   gap: 900px;
   transition: all 1.4s ease;
 }
@@ -166,6 +164,7 @@ a:hover {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    background-color: #090909; 
   }
 
   #photography-background {
@@ -281,6 +280,7 @@ a:hover {
     height: 100vh;
     padding-top: 30px;
     padding-bottom: 30px;
+    background-color: #090909; 
   }
 
   .item-1 {
@@ -529,6 +529,7 @@ a:hover {
     justify-content: space-evenly;
     align-items: center;
     gap: 1.9rem;
+    background-color: #090909; 
   }
 
   .item-1 {
@@ -599,7 +600,7 @@ a:hover {
 
 @media (min-width: 1920px) {
   nav ul li {
-    margin: 0 9.9rem;
+    margin: 0 8.2rem;
     padding: 0 6.2rem;
   }
 
@@ -638,6 +639,7 @@ a:hover {
     justify-content: space-evenly;
     align-items: center;
     gap: 1.9rem;
+    background-color: #090909; 
   }
 
   #photography-background {
@@ -782,6 +784,7 @@ a:hover {
     justify-content: space-evenly;
     align-items: center;
     gap: 1.9rem;
+    background-color: #090909; 
   }
 
   #photography-background {
