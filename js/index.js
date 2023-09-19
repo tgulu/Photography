@@ -1,12 +1,13 @@
-const placesPhotography = document.getElementById("placesPhotography");
+const placesPhotography = document.getElementById("places-photography");
 placesPhotography.addEventListener("click", function () {
   window.location.href = "/html/places.html";
 });
 
-const facesPhotography = document.getElementById("facesPhotography");
+const facesPhotography = document.getElementById("faces-photography");
 facesPhotography.addEventListener("click", function () {
   window.location.href = "/html/faces.html";
 });
+
 
 
 
