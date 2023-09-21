@@ -2,65 +2,196 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FaCeS</title>
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/css/faces.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faces</title>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Tajawal:wght@200;300;500;800;900&display=swap"
+    rel="stylesheet">
     <link
-        href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Tajawal:wght@200;300;500;800;900&display=swap"
-        rel="stylesheet">
-</head>
-<body>
-    <!-- Navbar -->
-    <div class="nav-container">
-        <div class="row ">
-            <nav id="navbar">
-                <ul>
-                    <li><a href="#"><h1>Faces</h1></a></li>
-                    <li><a href="/index.html"><h1>Home</h1></a></li>
-                    <li><a href="/html/places.html"><h1>Places</h1></a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-    <div>
+    href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light &family=Tajawal:wght@200;300;500;800;900&display=swap"
+    rel="stylesheet">
 
-        <!-- portfolio section -->
-        <section id="portfolio" class="vh-100 py-7">
-            <div class="container">
-                <div class="portfolio-content">
-                    <div class="portfolio-grid grid">
-                        <div><img src="/images/faces/---_0216.jpg " alt="Photo 1"></div>
-                        <div><img src="/images/faces/21A_0796.jpg" alt="Photo 1"></div>
-                        <div><img src="/images/faces/_19_1318.jpg" alt="Photo 1"></div>
-                        <div><img src="/images/faces/_18_1256.jpg" alt="Photo 1"></div>
-                        <div><img src="/images/faces/16A_0559.jpg" alt="Photo 1"></div>
-                        <div><img src="/images/faces/_34_1333.jpg" alt="Photo 1"></div>
-                        <div><img src="/images/faces/10A_1070.jpg" alt="Photo 1"></div>
-                        <div><img src="/images/faces/27A_0802.jpg" alt="Photo 1"></div>
-                        <div><img src="/images/faces/_4A_0781.jpg" alt="Photo 1"></div>
-                        <div><img src="/images/faces/18A_1078.jpg" alt="Photo 1"></div>
-                        <div><img src="/images/faces/_35_1334.jpg" alt="Photo 1"></div>
-                        <div><img src="/images/faces/---_0220.jpg" alt="Photo 1"></div>
-                        <div><img src="/images/faces/17A_1077.jpg" alt="Photo 1"></div>
-                        <div><img src="/images/faces/---_0224.jpg" alt="Photo 1"></div>
-                        <div><img src="/images/faces/23A_0798.jpg" alt="Photo 1"></div>
-                        <div><img src="/images/faces/_7A_1067.jpg" alt="Photo 1"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end of portfolio section -->
-        <script src="/index.js"></script>
+  <style>
+    @import url('/css/base.css');
+    @import url('/css/image-grid.css');
+  </style>
+</head>
+
+
+<body>
+  <!-- Navbar -->
+  <div class="container">
+    <nav class="nav" id="nav">
+
+      <input type="checkbox" id="check">
+      <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+      </label>
+      <ul>
+        <li><a href="#">
+            <h1>Faces</h1>
+          </a></li>
+        <li><a href="/index.html">
+            <h1>Home</h1>
+          </a></li>
+        <li><a href="/html/places.html">
+            <h1>Places</h1>
+          </a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <div class="main-title">
+    <h1 id="page_title">FaCeS <span class="typewrite" data-loop="yes" data-speed="200" data-delay="1000"
+        data-words='["GaLLeRY","GaLLeR-.--", "GaLLe.-.-.--", "GaLL..-.-.--","GaL.-....-.-.--","Ga.-.. .-.. . .-. -.--", "G.- .-.. .-.. . .-. -.--", "--. .- .-.. .-.. . .-. -.--"]'></span>
+    </h1>
+  </div>
+
+
+
+  <div class="photo-grid">
+
+    <div class="card card-tall" id="card">
+      <img src="/images/faces/Zein.jpg" alt="Zein 1">
     </div>
+
+    <div class="card card-wide card-tall">
+        <img src="/images/faces/Mr Bond.png">
+      </div>
+  
+    <div class="card">
+      <img src="/images/faces/---_0216.jpg " alt="Zein + Hulla 1">
+    </div>
+
+    <div class="card">
+      <img src="/images/faces/_19_1318.jpg" alt="alex camera 2">
+    </div>
+
+    <div class="card">
+      <img src="/images/faces/17A_1077.jpg" alt="gigi ella 12">
+    </div>
+
+
+    <div class="card">
+        <img src="/images/faces/_5A_0782.jpg" alt="skater2 12">
+      </div>
+
+    <div class="card card-wide card-tall">
+      <img src="/images/faces/_34_1333.jpg" alt="Harry Loz 5">
+    </div>
+
+    <div class="card">
+      <img src="/images/faces/---_0224.jpg" alt="Bliss 13">
+    </div>
+
+    <div class="card">
+      <img src="/images/faces/21A_0796.jpg" alt="Svi Roller 2">
+    </div>
+
+    <div class="card">
+      <img src="/images/faces/__5_0004.jpg" alt="Pav solo lake 10">
+    </div>
+
+    <div class="card">
+      <img src="/images/faces/16A_0559.jpg" alt="kenny 3">
+    </div>
+
+    <div class="card card-tall">
+      <img src="/images/faces/27A_0802.jpg" alt="Skater1 7">
+    </div>
+
+    <div class="card card-tall ">
+      <img src="/images/faces/_4A_0781.jpg" alt="svi rollerworld 8">
+    </div>
+
+    <div class="card">
+      <img src="/images/faces/_14_0011.jpg" alt="">
+    </div>
+
+    <div class="card">
+      <img src="/images/faces/_20_1319.jpg" alt="svi beach 10">
+    </div>
+
+    <div class="card">
+      <img src="/images/faces/---_0218.jpg" alt="bliss 10">
+    </div>
+
+    <div class="card">
+      <img src="/images/faces/_35_1334.jpg" alt="loz reach">
+    </div>
+
+    <div class="card">
+        <img src="/images/faces/28A_0570.jpg" alt="Iggy Jack 1">
+      </div>
+
+
+    <div class="card card-wide card-tall">
+      <img src="/images/faces/---_0220.jpg" alt="ella B&w 11">
+    </div>
+
+    <div class="card">
+      <img src="/images/faces/23A_0798.jpg" alt="svi green 14">
+    </div>
+
+    <div class="card">
+      <img src="/images/faces/_7A_1067.jpg" alt="iggy solo 15">
+    </div>
+
+    <div class="card">
+      <img src="/images/faces/18A_1078.jpg" alt="iggy + lauren 9">
+    </div>
+
+    <div class="card  card-tall" id="card4">
+      <img src="/images/faces/_35_1299.jpg" alt="chris 11">
+    </div>
+
+    <div class="card card-tall" id="card2">
+      <img src="/images/faces/_25_1289.jpg" alt="Two Grils 1">
+    </div>
+
+    <div class="card">
+      <img src="/images/faces/_2A_1062.jpg" alt="stelize 1">
+    </div>
+
+    <div class="card  card-tall" id="card3">
+      <img src="/images/faces/Dan Sunset.jpg" alt="dan 11">
+    </div>
+
+    <div class="card">
+      <img src="/images/faces/IMG_5450.JPG" alt="loz Park">
+    </div>
+
+    <div class="card">
+      <img src="/images/faces/---_0227.jpg" alt="iggy 11">
+    </div>
+
+    <div class="card card-tall card-wide">
+      <img src="/images/faces/---_0214.jpg" alt="Hulla Alice 1">
+    </div>
+
+    <div class="card">
+      <img src="/images/faces/19A_0794.jpg" alt="Pav Phone 1">
+    </div>
+
+ 
+
+  </div>
+
+  <script src="/typewriting-master/typewriting.js"></script>
+
 </body>
 
 </html>

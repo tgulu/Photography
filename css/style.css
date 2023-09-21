@@ -1,5 +1,8 @@
 :root {
+  --clr-dark: black;
+  --clr-light: #f1f5f9;
   --art_title-color: white;
+  --photo-container-cooler: #090909; 
 }
 
 * {
@@ -21,7 +24,10 @@ body {
   line-height: 1.2;
   font-family: "Tajawal", "Gill Sans", "Gill Sans MT", "Trebuchet MS",
     sans-serif;
+
 }
+
+/* Header */
 
 .main-title {
   color: var(--art_title-color);
@@ -68,16 +74,21 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  gap: 900px;
   transition: all 1.4s ease;
 }
 a.active,
 a:hover {
   background: transparent;
-  /* background: #1b9bff; */
   transition: 0.5s;
 }
 
+/* End of Header */
+
+/* Photography Section */
+
+.photo-container{
+  background-color: var(--photo-container-cooler);
+}
 .container {
   width: 100%;
   height: 100vh;
@@ -102,6 +113,8 @@ a:hover {
   opacity: 2;
 }
 
+/* End of Photography Section */
+
 /* Video Section */
 
 .video-section {
@@ -117,7 +130,6 @@ a:hover {
 }
 
 .video-background .trailer-video {
-  /* width: 20px; */
   position: absolute;
   z-index: 2;
   align-items: center;
@@ -131,6 +143,8 @@ a:hover {
   height: 100vh;
   width: 70%;
 }
+
+/* End of Video Section */
 
 @media (min-width: 360px) {
   .main-title {
@@ -164,7 +178,6 @@ a:hover {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: #090909; 
   }
 
   #photography-background {
@@ -212,14 +225,13 @@ a:hover {
     transform: scale(1.3);
   }
   .video-background .trailer-video {
-    width: 330px;
+    width: 230px;
   }
-
-
 
   .video-section .video-background img {
     height: 100vh;
     width: 100%;
+    overflow:auto;
   }
 }
 
@@ -247,7 +259,7 @@ a:hover {
 
   .video-section .video-background img {
     height: 100vh;
-    width: 100%;
+    width: 60%;
   }
 }
 
@@ -280,7 +292,6 @@ a:hover {
     height: 100vh;
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: #090909; 
   }
 
   .item-1 {
@@ -350,12 +361,12 @@ a:hover {
   }
  
   .video-background .trailer-video {
-    width: 700px;
+    width: 550px;
   }
 
   .video-section .video-background img {
     height: 100vh;
-    width: 100%;
+    width: 80%;
   }
 }
 
@@ -367,17 +378,17 @@ a:hover {
     position: fixed;
     width: 100%;
     height: 110vh;
-    background: #2c3e50;
+    background: var(--photo-container-cooler);
     top: 80px;
     left: -100%;
     text-align: center;
     transition: all 0.5s;
-    z-index: 44;
+    z-index: 99;
   }
   nav ul li {
     display: block;
     margin: 50px 0;
-    line-height: 30px;
+    line-height: 90px;
   }
   nav ul li a {
     font-size: 20px;
@@ -436,7 +447,7 @@ a:hover {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #090909; 
+    background-color: var(--photo-container-cooler);
   }
 
   #photography-background {
@@ -473,7 +484,7 @@ a:hover {
     line-height: 1;
     top: 50%;
     left: 50%;
-    transform: translate(-90%, -240%);
+    transform: translate(-50%, -240%);
     color: white;
     z-index: 1;
   }
@@ -489,12 +500,12 @@ a:hover {
   }
 
   .video-background .trailer-video {
-    width: 730px;
+    width: 600px;
   }
 
   .video-section .video-background img {
     height: 100vh;
-    width: 80%;
+    width: 70%;
   }
 }
 
@@ -529,7 +540,6 @@ a:hover {
     justify-content: space-evenly;
     align-items: center;
     gap: 1.9rem;
-    background-color: #090909; 
   }
 
   .item-1 {
@@ -545,7 +555,7 @@ a:hover {
 
   .video-section .video-background img {
     height: 100vh;
-    width: 75%;
+    width: 80%;
   }
 }
 
@@ -574,7 +584,7 @@ a:hover {
 
   .video-section .video-background img {
     height: 100vh;
-    width: 75%;
+    width: 80%;
   }
 }
 
@@ -594,13 +604,13 @@ a:hover {
 
   .video-section .video-background img {
     height: 100vh;
-    width: 70%;
+    width: 90%;
   }
 }
 
 @media (min-width: 1920px) {
   nav ul li {
-    margin: 0 8.2rem;
+    margin: 0 9.9rem;
     padding: 0 6.2rem;
   }
 
@@ -639,7 +649,6 @@ a:hover {
     justify-content: space-evenly;
     align-items: center;
     gap: 1.9rem;
-    background-color: #090909; 
   }
 
   #photography-background {
@@ -671,9 +680,9 @@ a:hover {
     font-size: 1.8rem;
     font-weight: 500;
     line-height: 1;
-    top: 80%;
+    top: 50%;
     left: 50%;
-    transform: translate(-100%, -400%);
+    transform: translate(-50%, -300%);
     color: white;
     z-index: 1;
   }
@@ -698,13 +707,13 @@ a:hover {
 
   .video-section .video-background img {
     height: 100vh;
-    width: 70%;
+    width: 100%;
   }
 }
 
-@media (min-width: 2100px) {
+@media (min-width: 2000px) {
   nav ul li {
-    margin: 0.2rem 10.1rem;
+    margin: 0.2rem 9rem;
     padding: 0 6.5rem;
   }
   nav ul li a {
@@ -732,8 +741,8 @@ a:hover {
   }
 
   .video-section .video-background img {
-    height: 100vh;
-    width: 70%;
+    height: 110vh;
+    width: 100%;
   }
 }
 
@@ -784,7 +793,6 @@ a:hover {
     justify-content: space-evenly;
     align-items: center;
     gap: 1.9rem;
-    background-color: #090909; 
   }
 
   #photography-background {
@@ -830,7 +838,7 @@ a:hover {
 
   .photo-container .photo-item-inner:hover img {
     filter: grayscale(100%);
-    transform: scale(1.4);
+    transform: scale(1.3);
   }
 
   .video-background .trailer-video {

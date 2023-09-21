@@ -5,62 +5,145 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PLaCeS</title>
+    <title>Places</title>
     <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="/css/places.css">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+    href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Tajawal:wght@200;300;500;800;900&display=swap"
+    rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Tajawal:wght@200;300;500;800;900&display=swap"
         rel="stylesheet">
-</head>
-   
-   
 
+    <style>
+        @import url('/css/base.css');
+        @import url('/css/image-grid.css');
+    </style>
+</head>
 
 
 <body>
     <!-- Navbar -->
-    <div class="nav-container">
-        <div class="row">
-            <nav id="navbar">
-                <ul>
-                    <li><a href="#"><h1>Places</h1></a></li>
-                    <li><a href="/index.html"><h1>Home</h1></a></li>
-                    <li><a href="/html/faces.html"><h1>Faces</h1></a></li>
-                </ul>
-            </nav>
-        </div>
+    <div class="container">
+        <nav class="nav" id="nav">
+
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars" id="btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
+            <ul>
+                <li><a href="#">
+                        <h1>PLaces</h1>
+                    </a></li>
+                    <li><a href="/index.html">
+                        <h1>Home</h1>
+                    </a></li>
+                <li><a href="/html/faces.html">
+                        <h1>Faces</h1>
+                    </a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div class="main-title">
+        <h1 id="page_title">PLaCeS <span class="typewrite" data-loop="yes" data-speed="200" data-delay="1000"
+                data-words='["GaLLeRY","GaLLeR-.--", "GaLLe.-.-.--", "GaLL..-.-.--","GaL.-....-.-.--","Ga.-.. .-.. . .-. -.--", "G.- .-.. .-.. . .-. -.--", "--. .- .-.. .-.. . .-. -.--"]'></span>
+        </h1>
     </div>
 
 
 
-    
-    <!-- Portfolio section -->
-    <section id="portfolio" class="vh-100 py-7">
-        <div class="container">
-            <div class="portfolio-content">
-                <div class="portfolio-grid grid">
-                    <div><img src="/images/places/22A_0564.jpg" alt="Photo 1"></div>
-                    <div><img src="/images/places/_25_1324.jpg" alt="Photo 1"></div>
-                    <div><img src="/images/places/---_0234.jpg" alt="Photo 1"></div>
-                    <div><img src="/images/places/_22_1259.jpg" alt="Photo 1"></div>
-                    <div><img src="/images/places/_26_1261.jpg" alt="Photo 1"></div>
-                    <div><img src="/images/places/_27_1262.jpg" alt="Photo 1"></div>
-                    <div><img src="/images/places/_28_1263.jpg" alt="Photo 1"></div>
-                    <div><img src="/images/places/_31_1295.jpg" alt="Photo 1"></div>
-                    <div><img src="/images/places/_29_1264.jpg" alt="Photo 1"></div>
-                    <div><img src="/images/places/---_0228.jpg" alt="Photo 1"></div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="photo-grid">
 
-    <script src="/index.js"></script>
+        <div class="card card-wide card-tall" id="phot-card">
+            <img src="/images/places/__3_1303.jpg" alt="Seaside 1">
+        </div>
+
+        <div class="card">
+            <img src="/images/places/28A_0803.jpg" alt="RollerWorld 1">
+        </div>
+            
+
+        <div class="card">
+            <img src="/images/places/_22_1259.jpg" alt="Squre Snow 1">
+        </div>
+
+        <div class="card ">
+            <img src="/images/places/_25_1324.jpg" alt="Pier 1">
+        </div>
+        <div class="card">
+            <img src="/images/places/_31_1295.jpg" alt="Pablo House 1">
+        </div>
+
+        <div class="card" id="phot-card">
+            <img src="/images/places/22A_0564.jpg" alt="BFC 1">
+        </div>
+
+
+        <div class="card card-tall" id="london-card">
+            <img src="/images/places/---_0228.jpg" alt="London B&W 1">
+        </div>
+
+        <div class="card card-wide  card-tall">
+            <img src="/images/places/_26_1261.jpg" alt="Pav SNow Campus 1">
+        </div>
+
+        <div class="card card-wide card-tall">
+            <img src="/images/places/_27_1262.jpg" alt="Library 1">
+        </div>
+
+        <div class="card">
+            <img src="/images/places/_28_1263.jpg" alt="Lake 1">
+        </div>
+
+        <div class="card">
+            <img src="/images/places/_29_1264.jpg" alt="Nemo 1">
+        </div>
+
+        <div class="card">
+            <img src="/images/places/12A_0787.jpg" alt="">
+        </div>
+
+        <!-- hherer -->
+        <div class="card card-wide card-tall" id="pav-gardens">
+            <img src="/images/places/---_0234.jpg" alt="Brighton B&W 1">
+        </div>
+    
+
+        <div class="card">
+            <img src="/images/places/_30_1265.jpg" alt="Library Snow 2">
+        </div>
+
+
+        <div class="card card-wide card-tall ">
+            <img src="/images/places/__8_1308.jpg" alt="seafront">
+        </div>
+
+        <div class="card ">
+            <img src="/images/places/---_0232.jpg" alt="Love B&W 8">
+        </div>
+
+        <div class="card ">
+            <img src="/images/places/__7_1307.jpg" alt="seafront2">
+        </div>
+
+
+
+
+    </div>
+
+    <script src="/typewriting-master/typewriting.js"></script>
+
 </body>
 
 </html>
