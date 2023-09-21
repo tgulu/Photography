@@ -161,10 +161,10 @@
   
   @media screen and (min-width: 600px) {
 
-    .photo-grid {
+    /* .photo-grid {
       padding: 0 9rem;
 
-    }
+    } */
 
     .card-tall {
       grid-row: span 2 / auto;
