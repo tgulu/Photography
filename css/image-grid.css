@@ -106,17 +106,17 @@ label #cancel {
   font-size: 4rem;
   font-weight: 300;
 }
-
+.photo-grid {
+  gap: 0.2rem;
+  padding: 0;
+  margin-top: 0.3rem;
+  grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+  grid-auto-rows: 390px;
+}
 
 
 @media screen and (min-width: 300px) {
-  .photo-grid {
-    gap: 0.2rem;
-    padding: 0;
-    margin-top: 0.3rem;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-auto-rows: 200px;
-  }
+
 
   #card {
     grid-row: span 2 / auto;
@@ -236,14 +236,14 @@ label #cancel {
     margin: 0.1rem 7.4rem;
     padding: 0.7rem 0.8rem;
   }
-  .photo-grid {
+  /* .photo-grid {
     display: grid;
     gap: 0.6rem;
     padding: 0 0.6rem;
     margin-top: 0.6rem;
     grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
     grid-auto-rows: 390px;
-  }
+  } */
 }
 
 @media (min-width: 1280px) {
