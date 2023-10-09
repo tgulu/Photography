@@ -185,7 +185,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 40vh;
+    height: 100vh;
   }
 
   .photo-item-inner {
@@ -259,13 +259,10 @@ a:hover {
 
   .video-section .video-background img {
     height: 100vh;
-    width: 60%;
+    width: 100%;
   }
 }
 
-@media (min-width: 640px) {
-
-}
 
 @media (min-width: 640px) {
 
