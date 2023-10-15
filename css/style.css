@@ -96,7 +96,7 @@ a:hover {
 }
 
 #home-section {
-  background: url("/images/faces/Taboo.jpg") center/cover no-repeat fixed;
+  background: url("/images/faces/Taboo.webp") center/cover no-repeat fixed;
   height: 100vh;
   display: flex;
   flex-direction: column;
