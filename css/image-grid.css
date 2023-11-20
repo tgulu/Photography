@@ -37,10 +37,10 @@ nav {
   transition: all 1.4s ease;
   margin-bottom: 1rem;
   z-index: 99;
+  /* font-weight: 900; */
 }
 
 nav ul li a {
-  font-weight: 100;
   color: var(--off_white-color);
   font-size: 1.3rem;
   padding: 0.5rem 0.9rem;
@@ -55,6 +55,7 @@ nav ul li {
   line-height: 30px;
   margin: 1.1rem 6.4rem;
   padding: 0 6.1rem;
+  /* font-weight: 100; */
 }
 
 nav ul li a:before {
@@ -66,7 +67,7 @@ nav ul li a:before {
   width: 100%;
   background: white;
   transform: scaleX(0);
-  transform-origin: right;
+  /* transform-origin: right; */
   transition: transform 0.4s linear;
 }
 
@@ -117,11 +118,10 @@ label #cancel {
 } */
 
 @media screen and (min-width: 300px) {
-
   .photo-grid {
     display: grid;
     gap: 0;
-    padding: 0 ;
+    padding: 0;
     margin-top: 0;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-auto-rows: 300px;
@@ -131,9 +131,9 @@ label #cancel {
     grid-row: span 2 / auto;
   }
 
-  #pav-gardens {
+  /* #pav-gardens {
     grid-row: span 2 / auto;
-  }
+  } */
 
   /* #london-card {
       grid-row: span 3 / auto;
@@ -177,22 +177,31 @@ label #cancel {
 
 @media (min-width: 1024px) {
   nav ul li a {
-    font-size: 0.9rem;
+    font-size: 1.9rem;
   }
 }
 
 @media (max-width: 1117px) {
+  .photo-grid {
+    display: grid;
+    gap: 0;
+    padding: 0;
+    margin-top: 60px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 300px;
+  }
+
   .main-title {
     display: none;
     color: var(--off_white-color);
-    font-weight: 300;
+    /* font-weight: 900; */
     margin-top: 6rem;
     padding-left: none;
   }
 
   #page_title {
     font-size: 1.1rem;
-    font-weight: 400;
+    font-weight: 300;
   }
   .typewrite {
     display: inline-block;
@@ -212,12 +221,14 @@ label #cancel {
     left: -100%;
     text-align: center;
     transition: all 0.5s;
+    z-index: 44;
   }
+
   nav ul li {
     display: block;
-    line-height: 30px;
+    line-height: 95px;
     margin: 1.1rem 3.9rem;
-    padding: 0 6.1rem;
+    padding: 0 4.8rem;
   }
 
   #check:checked ~ ul {
@@ -231,8 +242,6 @@ label #cancel {
   #check:checked ~ label #cancel {
     display: block;
   }
-
-
 }
 
 @media (min-width: 1118px) {
@@ -266,8 +275,8 @@ label #cancel {
 
 @media (min-width: 1536px) {
   nav ul li {
-    margin: 0.5rem 9.2rem;
-    padding: 0.6rem 3.8rem;
+    margin: 0.5rem 8.2rem;
+    padding: 0.6rem 3.0rem;
   }
 }
 
@@ -275,18 +284,18 @@ label #cancel {
   nav ul li {
     margin: 0.3rem 8.2rem;
     padding: 1.1rem 7rem;
+    /* font-weight: 100; */
   }
 
   .main-title {
     color: var(--off_white-color);
-    font-weight: 300;
     margin-top: 6rem;
     padding-left: 0.9rem;
   }
 
   #page_title {
     font-size: 4rem;
-    font-weight: 300;
+    font-weight: 200;
   }
   .typewrite {
     display: inline;
@@ -320,4 +329,12 @@ label #cancel {
     display: flex;
     flex-direction: column;
   }
+}
+
+@media (min-width: 2800px) {
+  nav ul li {
+    margin: 2rem 14.9rem;
+    padding: 0.9rem 8.9rem;
+  }
+
 }

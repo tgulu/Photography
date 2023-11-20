@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>a SHoT BY GuLu</title>
+    <title>Nah SHoT BY GuLu</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
@@ -20,9 +20,6 @@
         rel="stylesheet">
 
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light &family=Tajawal:wght@200;300;500;800;900&display=swap"
-        rel="stylesheet">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
@@ -36,14 +33,15 @@
         <div class="container">
 
 
-            <nav>
+            <nav class="nav" id="nav">
                 <input type="checkbox" id="check">
                 <label for="check" class="checkbtn">
-                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-bars"id="btn"></i>
+                    <i class="fas fa-times" id="cancel"></i>
                 </label>
-                <ul class="nav-links">
-                    <li><a href="#photography-section">Photography</a></li>
+                <ul>
                     <li><a href="#home-section">Home</a></li>
+                    <li><a href="#photography-section">Photography</a></li>
                     <li><a href="#video-section">Videography</a></li>
                 </ul>
             </nav>
@@ -63,7 +61,7 @@
             <div class="photo-container">
 
                 <div class="photo-item-inner item-1" id="places-photography">
-                    <img src="/images/places/BrightonPier.webp" alt="film">
+                    <img src="/images/places/BrightonPier.webp" alt="film" loading="lazy">
                     <div class="overlay">
                         <h1>Places</h1>
                     </div>
@@ -73,7 +71,7 @@
                     <img src="/images/faces/Kyle.webp" alt="photographyBackground" />
                 </div>
                 <div class="photo-item-inner item-3" id="faces-photography">
-                    <img src="/images/faces/Dan.webp" alt="digital">
+                    <img src="/images/faces/Dan.webp" alt="digital" loading="lazy">
                     <div class="overlay">
                         <h1>Faces</h1>
                     </div>
@@ -85,9 +83,9 @@
     <section id="video-section" class="video-section">
         <div class="container">
             <div class="video-background">
-                <img src="/images/faces/video_screen.webp" alt="film">
+                <img src="/images/faces/video_screen.webp" alt="film" loading="lazy">
 
-                <video class="trailer-video" controls src="/video/A Summer In The Life Trailer.mp4">
+                <video class="trailer-video" controls src="/video/A Summer In The Life Trailer.mp4"  loading="lazy">
 
                     this web broswer doesnt
                     support HTML5 video
