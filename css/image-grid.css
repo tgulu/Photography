@@ -276,7 +276,14 @@ label #cancel {
 @media (min-width: 1536px) {
   nav ul li {
     margin: 0.5rem 8.2rem;
-    padding: 0.6rem 3.0rem;
+    padding: 0.6rem 3rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  nav ul li {
+    margin: 0.5rem 8.2rem;
+    padding: 0.6rem 4.6rem;
   }
 }
 

@@ -406,7 +406,7 @@ a:hover {
   }
 
   .main-title {
-    margin-top: 1.9rem;
+    margin-top: 1.4rem;
     margin-right: 1.2rem;
     text-align: center;
     justify-content: center;
@@ -478,13 +478,30 @@ a:hover {
   }
 
   .photo-container .photo-item-inner img {
-    transform: scale(1.1);
+    transform: scaleX(1.1);
+    transform: translate(50,100);
+
     transition: all 0.7s ease;
   }
 
-  .photo-container .photo-item-inner:hover img {
+  .photo-container .item-1 img {
+    transform-origin: left center;
+
+  }
+
+  .photo-container .item-3 img {
+    transform-origin: right center;
+
+  }
+
+  .photo-container .item-1:hover img {
     filter: grayscale(100%);
-    transform: scale(2.1);
+    transform: scale(2.1,2.2);
+  }
+
+  .photo-container .item-3:hover img {
+    filter: grayscale(100%);
+    transform: scale(2.1,2.2);
   }
 
   .video-background .trailer-video {
@@ -508,7 +525,7 @@ a:hover {
     height: 110vh;
     background: var(--photo-container-cooler);
     top: 80px;
-    left: -100%;
+    left: -110%;
     text-align: center;
     transition: all 0.5s;
     z-index: 9;
