@@ -145,6 +145,17 @@ img {
   margin: 0 auto;
 }
 
+
+/* .photo-container {
+  background: url("/images/faces/Kyle.webp" ) center/cover no-repeat fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+} */
+
 .photo-container .photo-item-inner .overlay {
   transition: all 0.5s ease;
   opacity: 0;
