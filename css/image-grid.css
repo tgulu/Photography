@@ -7,7 +7,7 @@
 
 html {
   scroll-behavior: smooth;
-  height: 100%;
+  height: auto;
 }
 
 body {
@@ -123,9 +123,6 @@ header.sticky .logo {
   transition: all 0.3s ease-in-out;
   background-color: white;
 }
-
-
-
 
 .main-title {
   color: var(--off_white-color);
