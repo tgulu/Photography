@@ -1,19 +1,15 @@
 .card {
   display: flex;
-
   justify-content: center;
-  color: blue;
-  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem,
+  box-shadow: rgba(249, 248, 248, 0.2) 0px 0.15rem 1.2rem,
     rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
   max-width: 100%;
   height: auto;
   border-radius: 10px;
   transition: all 500ms;
   overflow: hidden;
-
   padding: 0 1.3rem;
   margin-top: 0.9rem;
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -21,11 +17,11 @@
   transition: all 0.7s ease;
 }
 
-.card:hover {
+/* .card:hover {
   box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em,
     rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
   transform: translateY(-3px) scale(1.1);
-}
+} */
 
 @media screen and (min-width: 1280px) {
   .card {
@@ -63,23 +59,10 @@
   box-sizing: border-box;
 }
 
-/*
-  Remove list styles (bullets/numbers)
-  in case you use it with normalize.css
-*/
-ol, ul {
-  list-style: none;
-}
+
 
 /* For images to not be able to exceed their container */
 
 
-/* Removes spacing between cells in tables */
-table {
-  border-collapse: collapse;
-}
 
-/* Revert the 'white-space' property for textarea elements on Safari */
-textarea {
-  white-space: revert;
-}
+

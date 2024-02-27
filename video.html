@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Slider</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .slider {
+      position: relative;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .videos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-x: hidden;
+    }
+
+    .videos video,
+    .videos iframe {
+      width: 100%;
+      height: 600px; /* Set a fixed height for the videos */
+      display: none; /* Initially hide all videos */
+      border-radius: 10px;
+      object-fit: cover; /* Ensure video content fits within the fixed height */
+    }
+
+    .videos video.active,
+    .videos iframe.active {
+      display: block; /* Show only the active video */
+    }
+
+    .video-title {
+      text-align: center;
+      margin-top: 20px;
+      display: none; /* Initially hide all video titles */
+    }
+
+    .video-box1 .video-title.active {
+      display: block; /* Show title1 when video-box1 video is active */
+    }
+
+    .video-box2 .video-title.active {
+      display: block; /* Show title2 when video-box2 video is active */
+    }
+
+    .controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+      color: transparent;
+    }
+
+    .pagination {
+      display: flex;
+      color: transparent;
+    }
+
+    .pagination button {
+      margin: 3px 3px;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 10px;
+      font-size: 10px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .pagination button.active::before:hover {
+      background-color: #fff;
+      color: grey;
+    }
+
+    .pagination button.active:hover {
+      background-color: white;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <div class="slider">
+    <div class="videos">
+      <div class="video-box1">
+        <h1 class="video-title">DJ Set</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Wsn3w8oWVxE?si=GQkyblr9nmRLvm9c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="no-referrer-when-downgrade"allowfullscreen></iframe>
+      </div>
+
+      <div class="video-box1">
+        <h1 class="video-title">DJ Set</h1>
+        <video class="trailer-video" controls loop src="/video/Dj Set.webm"
+        loading="lazy">
+      </div>
+
+      <div class="video-box1">
+        <h1 class="video-title">Title 1</h1>
+        <video class="trailer-video" controls loop src="/video/A Summer In The Life Trailer.mp4" loading="lazy"></video>
+        
+      </div>
+    </div>
+    <div class="controls">
+      <div class="pagination"></div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const videos = document.querySelectorAll('.videos video, .videos iframe');
+      const titles = document.querySelectorAll('.video-title');
+      const pagination = document.querySelector('.pagination');
+
+      // Initialize pagination buttons
+      for (let i = 0; i < videos.length; i++) {
+        const button = document.createElement('button');
+        button.textContent = i + 1;
+        button.addEventListener('click', () => {
+          goToVideo(i);
+        });
+        pagination.appendChild(button);
+      }
+
+      let currentIndex = 0;
+      goToVideo(0); // Show the first video when the page loads
+
+      function goToVideo(index) {
+        if (index >= 0 && index < videos.length) {
+          currentIndex = index;
+          updatePagination();
+          updateSlider();
+        }
+      }
+
+      function updatePagination() {
+        const buttons = pagination.querySelectorAll('button');
+        buttons.forEach((button, index) => {
+          if (index === currentIndex) {
+            button.classList.add('active');
+          } else {
+            button.classList.remove('active');
+          }
+        });
+      }
+
+      function updateSlider() {
+        // Hide all videos and titles
+        videos.forEach(video => {
+          video.classList.remove('active');
+        });
+        titles.forEach(title => {
+          title.classList.remove('active');
+        });
+        // Show only the current video and its title
+        videos[currentIndex].classList.add('active');
+        titles[currentIndex].classList.add('active');
+      }
+    });
+  </script>
+</body>
+</html>
