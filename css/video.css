@@ -3,7 +3,14 @@
 
 .video-section {
   /* background-color: pink; */
-  background: url("/images/faces/video_screen.webp") center/cover no-repeat fixed;
+  /* background: url("/images/faces/video_screen.webp") center/cover no-repeat fixed;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center; */
+
 }
 
 
