@@ -1,69 +1,10 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-
 
 /* Video Section */
 
-#video-section {
+.video-section {
   /* background-color: pink; */
-  background: url("/images/faces/video_screen.webp") center/cover no-repeat fixed;
+  background: url("/images/faces/Taboo.webp") center/cover no-repeat fixed;
 }
-
-/* new */
-.video-container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-
-}
-
-.video-container .slider {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-/* video{
-    width: 100%;
-    height: 100%;
-} */
-
-
-/* .video-container ul{
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 20;
-} */
-
-/* .video-container ul li{
-    list-style: none;
-    cursor: pointer;
-    margin: 10px;
-}
-
-.video-container ul li video {
-    width: 200px;
-    transition: all 0.3s;
-}
-
-.video-container ul li video:hover{
-    transform: scale(1.1);
-} */
-
-
 
 
 .video-background {
@@ -80,17 +21,14 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  border-radius: 2%;
 }
 
-/* .video-section .video-background img {
+.video-section .video-background img {
   align-items: center;
   justify-content: center;
   height: 100vh;
   width: 100%;
-} */
-
-
+}
 
 @media (min-width: 360px) {
   .video-section .video-background img {
