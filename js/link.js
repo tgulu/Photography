@@ -28,3 +28,5 @@ const facesPhotography = document.getElementById("faces-photography");
 facesPhotography.addEventListener("click", function () {
   window.location.href = "/html/faces.html";
 });
+
+

@@ -166,22 +166,28 @@ img {
 }
 
 
-
-
 @media (min-width: 360px) {
   img {
     width: 90%;
   }
 
   .photo-container {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    /* padding-top: 40px;
+    padding-bottom: 40px; */
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+  }
+
+  #electronics-background {
+    display: flex;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
   }
 
   #photography-background {
@@ -201,18 +207,19 @@ img {
     justify-content: space-evenly;
   }
 
-  .item-1 {
+  /* .item-1 {
     margin-top: 9rem;
   }
 
   .item-3 {
     margin-bottom: 9rem;
-  }
+  } */
 
   .photo-item-inner h1 {
     font-size: 1.8rem;
     font-weight: 300;
     line-height: 1;
+    margin-top: 0.9rem;
     top: 50%;
     left: 50%;
     transform: translate(0%, -150%);
@@ -313,9 +320,9 @@ img {
     color: white;
   }
 
-  .nav-item {
+  /* .nav-item {
     margin: 30px 0;
-  }
+  } */
 
   .nav-menu.active {
     left: 0;
@@ -323,8 +330,8 @@ img {
   .photo-container {
     width: 100%;
     height: 100vh;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    /* padding-top: 30px;
+    padding-bottom: 30px; */
   }
 
   /* .item-1 {
@@ -368,6 +375,15 @@ img {
     align-items: center;
     background-color: var(--photo-container-cooler);
   }
+
+  #electronics-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+
 
   #photography-background {
     display: flex;
@@ -475,6 +491,16 @@ img {
     gap: 1.9rem;
   }
 
+
+  #electronics-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+  }
+
   #photography-background {
     display: flex;
     align-items: center;
@@ -523,7 +549,7 @@ img {
   }
 
   .video-background .trailer-video {
-    width: 1100px;
+    width: 110px;
   }
 
   .video-background {
@@ -554,6 +580,14 @@ img {
     justify-content: space-evenly;
     align-items: center;
     gap: 1.9rem;
+  }
+
+  #electronics-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
   }
 
   #photography-background {
